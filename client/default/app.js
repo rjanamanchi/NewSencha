@@ -5,7 +5,7 @@ Ext.Loader.setPath({
 //</debug>
 
 Ext.application({
-    name: 'Sencha1.0',
+    name: 'NewSencha',
 
     requires: [
         'Ext.MessageBox'
@@ -28,7 +28,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Sencha1.0.view.Main'));
+        Ext.Viewport.add(Ext.create('NewSencha.view.Main'));
     },
 
     onUpdated: function() {
