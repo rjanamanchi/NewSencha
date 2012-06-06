@@ -12,8 +12,6 @@ Ext.define("NewSencha.view.MainController", {
 		}
 	},
 	buttonClick : function(){
-		Ext.Msg.confirm(
-			"Congrats", "Good?", function(){}
-		);
+		alert('Button Clicked');
 	}
 });
