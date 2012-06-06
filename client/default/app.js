@@ -32,12 +32,13 @@ Ext.application({
 		Ext.Msg.confirm(
             "Application Update",
             "This application has just successfully been updated to the latest version. Reload now?",
-            function() {}
+            function() {
+				var mainContainer = Ext.create(NewSencha.view.MainContainer);
+				Ext.Viewport.add(mainContainer);
+			}
         );
 		
         // Initialize the main view
-		var mainContainer = Ext.create(NewSencha.view.MainContainer);
-        Ext.Viewport.add(mainContainer);
     },
 
     onUpdated: function() {
