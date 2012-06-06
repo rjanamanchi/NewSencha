@@ -5,7 +5,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	{
 		xtype : "toolbar",
 		docked : "top",
-		title : "My ToolBar",
+		title : "ToolBar",
 		items : [
 		{
 			xtype : "spacer"
@@ -15,6 +15,12 @@ Ext.define("NewSencha.view.MainContainer", {
 			text : "ClickMe",
 			ui : "action",// For a good UI finish to the button
 			id : "my-button-id"
+		},
+		{
+			xtype : "button",
+			text : "ClickMe1",
+			ui : "action",// For a good UI finish to the button
+			id : "my-button-id1"
 		}
 		]
 	}
