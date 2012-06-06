@@ -16,12 +16,6 @@ Ext.define("NewSencha.view.MainContainer", {
 			ui : "action",// For a good UI finish to the button
 			id : "my-button-id"
 		},
-		{
-			xtype : "button",
-			text : "ClickMe1",
-			ui : "action",// For a good UI finish to the button
-			id : "my-button-id1"
-		}
 		]
 	}
 	]
