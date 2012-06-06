@@ -29,6 +29,12 @@ Ext.application({
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
+		Ext.Msg.confirm(
+            "Application Update",
+            "This application has just successfully been updated to the latest version. Reload now?",
+            function() {}
+        );
+		
         // Initialize the main view
 		var mainContainer = Ext.create(NewSencha.view.MainContainer);
         Ext.Viewport.add(mainContainer);
