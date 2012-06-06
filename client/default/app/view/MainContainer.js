@@ -24,7 +24,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	},
 	addButtonClicked : function (){
 		console.log("New style");
-	}
+	},
 	config:{
 		layout : {
 			type : "fit"
