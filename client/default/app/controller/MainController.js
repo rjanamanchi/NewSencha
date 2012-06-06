@@ -1,6 +1,8 @@
 Ext.define("NewSencha.controller.MainController", {
     extend: 'Ext.app.Controller',
 	
+	requires: ['Ext.MessageBox'],
+	
 	launch : function(){
 		console.log('Launched Users! This happens after the Application launch function is called');
 	},
@@ -9,7 +11,7 @@ Ext.define("NewSencha.controller.MainController", {
         console.log('Initialized Users! This happens before the Application launch function is called');
     }
 	
-	/*config:{
+	config:{
 		refs : {
 		    buttonClicked : "#my-button-id"
 		},
@@ -20,7 +22,8 @@ Ext.define("NewSencha.controller.MainController", {
 		}
 	},
 	buttonClick : function(){
-		alert("Changes");
+		Ext.Msg.confirm("Congrats","You clicked me!",function(){});
+		console.log('Button Clicked');
 	}
-	*/
+	
 });
