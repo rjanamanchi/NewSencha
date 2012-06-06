@@ -1,23 +1,33 @@
 Ext.define("NewSencha.view.MainContainer", {
     extend: 'Ext.Container',
-	config:{
-	items:[
-	{
-		xtype : "toolbar",
-		docked : "top",
-		title : "ToolBar",
-		items : [
-		{
-			xtype : "spacer"
-		},
-		{
-			xtype : "button",
-			text : "ClickMe",
-			ui : "action",// For a good UI finish to the button
-			id : "my-button-id"
-		},
-		]
+	alias: 'widget.mainContainer',
+	initialize: function(){
+		var newButton = {
+			xtype: "button",
+			text: "Add Case",
+			ui: "action",
+			handler: this.addButtonClicked,
+			scope:this
+		};
+		var toolBar = {
+			xtype : "toolbar",
+			docked : "top",
+			title : "Cases",
+			items : [
+			{
+				xtype : "spacer"
+			},
+				newButton
+			] 
+		};
+		this.add([toolBar]);
+	},
+	addButtonClicked : function (){
+		console.log("New style");
 	}
-	]
+	config:{
+		layout : {
+			type : "fit"
+		}
 	}
 });
