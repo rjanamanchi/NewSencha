@@ -1,5 +1,8 @@
 Ext.define("NewSencha.controller.MainController", {
-    extend: 'Ext.app.Container',
+    extend: 'Ext.app.Controller',
+	launch : function(){
+		alert("Launched main controller");
+	},
 	config:{
 		refs : {
 		    buttonClicked : "#my-button-id"
