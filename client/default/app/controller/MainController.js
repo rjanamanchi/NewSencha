@@ -11,6 +11,6 @@ Ext.define("NewSencha.view.MainController", {
 		}
 	},
 	buttonClick : function(){
-		alert('Button Clicked');
+		console.log("Button Tapped");
 	}
 });
