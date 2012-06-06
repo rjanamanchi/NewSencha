@@ -1,4 +1,4 @@
-Ext.define("Sencha1.0.view.Main", {
+Ext.define("NewSencha.view.Main", {
     extend: 'Ext.tab.Panel',
     requires: ['Ext.TitleBar'],
     
