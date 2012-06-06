@@ -11,7 +11,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['MainContainer'],
 
     icon: {
         57: 'resources/icons/Icon.png',
@@ -28,7 +28,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('NewSencha.view.Main'));
+		var mainContainer = Ext.create(NewSencha.view.MainContainer);
+        Ext.Viewport.add(mainContainer);
     },
 
     onUpdated: function() {
