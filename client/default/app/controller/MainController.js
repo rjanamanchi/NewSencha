@@ -1,4 +1,4 @@
-Ext.define("NewSencha.controller.MainController", {
+MainController : {
     extend: 'Ext.app.Controller',
 	
 	launch : function(){
