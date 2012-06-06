@@ -1,4 +1,6 @@
 Ext.define("NewSencha.controller.MainController", {
+
+	requires : ['Ext.MessageBox'],
     extend: 'Ext.app.Controller',
 	launch : function(){
 		this.callParent();
@@ -15,6 +17,12 @@ Ext.define("NewSencha.controller.MainController", {
 		}
 	},
 	buttonClick : function(){
-		console.log("button clicked");
+	Ext.Msg.confirm(
+            "Application Change",
+            "Working?",
+            function() {
+				console.log("button clicked");
+			}
+        );
 	}
 });
