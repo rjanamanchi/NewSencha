@@ -17,5 +17,6 @@ Ext.define("NewSencha.controller.MainController", {
 		}
 	},
 	buttonClick : function(){
-	alert("Changes");
+		alert("Changes");
+	}
 });
