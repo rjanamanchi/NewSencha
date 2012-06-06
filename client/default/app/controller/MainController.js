@@ -1,7 +1,9 @@
 Ext.define("NewSencha.controller.MainController", {
     extend: 'Ext.app.Controller',
 	launch : function(){
+		this.callParent();
 		alert("Launched main controller");
+		console.log("Main Controller launched");
 	},
 	config:{
 		refs : {
@@ -14,6 +16,6 @@ Ext.define("NewSencha.controller.MainController", {
 		}
 	},
 	buttonClick : function(){
-		alert("Clicked");
+		consolge.log("button clicked");
 	}
 });
