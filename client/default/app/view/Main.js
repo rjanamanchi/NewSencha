@@ -1,6 +1,6 @@
 Ext.define("NewSencha.view.Main", {
     extend: 'Ext.tab.Panel',
-	launch: function() {
+	initialize: function() {
         alert('App launched');
     }
 });
