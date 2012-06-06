@@ -1,6 +1,5 @@
 Ext.define("NewSencha.view.MainController", {
     extend: 'Ext.app.Container',
-	requires : ['Ext.MessageBox'],
 	config:{
 		refs : {
 		    buttonClicked : "#my-button-id"
