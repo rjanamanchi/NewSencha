@@ -12,7 +12,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		},
 		{
 			xtype : "button",
-			text : "Click",
+			text : "ClickMe",
 			ui : "action",// For a good UI finish to the button
 			id : "my-button-id"
 		}

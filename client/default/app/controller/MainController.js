@@ -1,6 +1,5 @@
 Ext.define("NewSencha.controller.MainController", {
     extend: 'Ext.app.Container',
-	requires : ['Ext.MessageBox'],
 	config:{
 		refs : {
 		    buttonClicked : "#my-button-id"
@@ -12,6 +11,6 @@ Ext.define("NewSencha.controller.MainController", {
 		}
 	},
 	buttonClick : function(){
-		Ext.Msg.confirm("Congrats","good?",function(){});
+		alert("Clicked");
 	}
 });
