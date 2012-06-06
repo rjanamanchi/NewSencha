@@ -35,6 +35,7 @@ Ext.application({
             function() {
 				var mainContainer = Ext.create(NewSencha.view.MainContainer);
 				Ext.Viewport.add(mainContainer);
+				alert("Added");
 			}
         );
 		
