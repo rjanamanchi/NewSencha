@@ -1,12 +1,6 @@
 Ext.define("NewSencha.controller.MainController", {
-
+    extend: "Ext.app.Controller",
 	requires : ['Ext.MessageBox'],
-    extend: 'Ext.app.Controller',
-	launch : function(){
-		this.callParent();
-		console.log("Main Controller launched");
-		alert('Alert');
-	},
 	config:{
 		refs : {
 		    buttonClicked : "#my-button-id"
