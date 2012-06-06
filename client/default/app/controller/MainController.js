@@ -5,6 +5,7 @@ Ext.define("NewSencha.controller.MainController", {
 	launch : function(){
 		this.callParent();
 		console.log("Main Controller launched");
+		alert('Alert');
 	},
 	config:{
 		refs : {
