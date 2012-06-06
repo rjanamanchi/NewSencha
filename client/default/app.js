@@ -35,7 +35,7 @@ Ext.application({
             function() {
 				var mainContainer = Ext.create(NewSencha.view.MainContainer);
 				Ext.Viewport.add(mainContainer);
-				alert("Added");
+				console.log("Adding Main View Container");
 			}
         );
 		
