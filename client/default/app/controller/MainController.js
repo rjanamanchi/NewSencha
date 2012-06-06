@@ -17,7 +17,7 @@ Ext.define("NewSencha.controller.MainController", {
 		},
 		control : {
 			maincontainer : {
-				addCaseCommandReceived : "addCaseCommand"
+					addCaseCommand : "addCaseCommandReceived"
 			}
 		}
 	},
