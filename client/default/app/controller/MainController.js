@@ -1,5 +1,5 @@
-MainController : {
-    //extend: 'Ext.app.Controller',
+Ext.define("NewSencha.controller.MainController", {
+    extend: 'Ext.app.Controller',
 	
 	launch : function(){
 		console.log('Launched Users! This happens after the Application launch function is called');

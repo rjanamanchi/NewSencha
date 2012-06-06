@@ -11,7 +11,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-	contollers : ['MainController'],
+	controllers : ['MainController'],
 	
     views: ['MainContainer'],
 
