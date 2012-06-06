@@ -13,17 +13,16 @@ Ext.define("NewSencha.controller.MainController", {
 	
 	config:{
 		refs : {
-		    buttonClicked : "#my-button-id"
+		    maincontainer : "mainContainer"
 		},
 		control : {
-			buttonClicked : {
-				tap : "buttonClick"
+			maincontainer : {
+				addCaseCommandReceived : "addCaseCommand"
 			}
 		}
 	},
-	buttonClick : function(){
-		Ext.Msg.confirm("Congrats","You clicked me!",function(){});
-		console.log('Button Clicked');
+	addCaseCommandReceived : function(){
+		console.log('Add case received');
 	}
 	
 });

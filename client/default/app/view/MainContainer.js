@@ -23,7 +23,8 @@ Ext.define("NewSencha.view.MainContainer", {
 		this.add([toolBar]);
 	},
 	addButtonClicked : function (){
-		console.log("New style");
+		console.log("Add case command sent across");
+		this.fireEvent("addCaseCommand", this);
 	},
 	config:{
 		layout : {
