@@ -59,7 +59,7 @@ Ext.define("NewSencha.controller.MainController", {
 			'list-max': 10
 			}, function(err, result) {
 			if (err) {
-				console.log("Error is : " + err.message)
+				console.log("Error is : " + err.message);
 			} else {
 			entries = result.list;
 			for (var i = 0; i < entries.length; i++) {
@@ -78,8 +78,8 @@ Ext.define("NewSencha.controller.MainController", {
 		}, function(res) {
 			var results = res.data.results;
 			console.log("Results are " + results);
-			}
-		}, function(code,errorprops,params) {
+			},
+		 function(code,errorprops,params) {
 			alert('Error retrieving web results: code: ' + code + " errorprops: " + errorprops + " params: " + params);
 		});
 		console.log("Fetch Case Command Received - End");
