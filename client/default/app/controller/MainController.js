@@ -11,8 +11,8 @@ Ext.define("NewSencha.controller.MainController", {
         console.log('Initialized Users! This happens before the Application launch function is called');
     },
 	
-	slideLeftTransition : { type : "slide", direction : "up"},
-	slideRightTransition : {type : "slide", direction : "down"},
+	slideLeftTransition : { type : "slide", direction : "left"},
+	slideRightTransition : {type : "slide", direction : "right"},
 	
 	config:{
 		refs : {
