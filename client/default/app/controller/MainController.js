@@ -13,7 +13,7 @@ Ext.define("NewSencha.controller.MainController", {
 	
 	config:{
 		refs : {
-		    maincontainer : "mainContainer"
+		    maincontainer : "mainContainer",
 			listContainer : "casesList"
 		},
 		control : {

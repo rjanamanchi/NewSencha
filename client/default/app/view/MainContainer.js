@@ -26,7 +26,7 @@ Ext.define("NewSencha.view.MainContainer", {
 			listeners : {
 				disclose : { fn : this.onListItemDisclose, scope : this }
 			}
-		}
+		};
 		
 		this.add([toolBar, list]);
 	},
