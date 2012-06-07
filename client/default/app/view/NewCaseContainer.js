@@ -6,7 +6,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
         scrollable:'vertical'
     },
     initialize: function () {
-        this.callParent();
+        this.callParent(arguments);
 		
 		var backButton = {
 			xtype : "button",
@@ -39,7 +39,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 			label : "Narrative"
 		};
 		
-		this.add([topToolBar],{xtype : "fieldset", items : [titleField,narrativeField]});
+		this.add([topToolBar,{xtype : "fieldset", items : [titleField,narrativeField]}]);
     },
 	backClicked : function(){
 		console.log("Back from New Container");
