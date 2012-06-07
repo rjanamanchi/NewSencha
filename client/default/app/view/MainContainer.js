@@ -2,6 +2,13 @@ Ext.define("NewSencha.view.MainContainer", {
     extend: 'Ext.Container',
 	alias: 'widget.mainContainer',
 	initialize: function(){
+		var newButtonLeft = {
+			xtype: "button",
+			text: "Fetch Cases",
+			ui: "action",
+			handler: this.fetchButtonClicked,
+			scope:this
+		};
 		var newButton = {
 			xtype: "button",
 			text: "Add Case",
@@ -14,6 +21,7 @@ Ext.define("NewSencha.view.MainContainer", {
 			docked : "top",
 			title : "Cases",
 			items : [
+			newButtonLeft,
 			{
 				xtype : "spacer"
 			},
@@ -31,6 +39,10 @@ Ext.define("NewSencha.view.MainContainer", {
 		
 		this.add([toolBar, list]);
 	},
+	fetchButtonClicked : function(){
+		console.log("Fetch button clicked");
+	}, 
+	
 	addButtonClicked : function (){
 		console.log("Add case command sent across");
 		this.fireEvent("addCaseCommand", this);

@@ -24,6 +24,7 @@ Ext.define("NewSencha.controller.MainController", {
 			maincontainer : {
 				addCaseCommand : "addCaseCommandReceived",
 				discloseItemCommand : "discloseItemCommandReceived"
+				fetchCaseCommand : "fetchCaseCommandReceived"
 			},
 			newcasecontainer : {
 				backFromNewContainer : "backToHomeCommand"
@@ -33,6 +34,23 @@ Ext.define("NewSencha.controller.MainController", {
 	backToHomeCommand : function(){
 		var homeScreen = this.getMaincontainer();
 		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
+	},
+	
+	fetchCaseCommandReceived : function(){
+		$fh.web({
+			url: "http://www.google.com",
+			method: "GET",
+			contentType: "text/html",
+			charset: "UTF-8",
+			period: 60000 //cache for 1 min
+			}, function(err, result) {
+			if (err) {
+			console.log("Error : " + err.message);
+			} else {
+				var data = result.body;
+				console.log("Response is " + data);
+			}
+		})
 	},
 	
 	discloseItemCommandReceived : function(list, record){
