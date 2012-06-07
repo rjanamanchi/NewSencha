@@ -54,7 +54,7 @@ Ext.define("NewSencha.controller.MainController", {
 				console.log("Response is " + data);
 			}
 		});*/
-		$fh.feed({
+		/*$fh.feed({
 			'link': "http://www.feedhenry.com/feed",
 			'list-max': 10
 			}, function(err, result) {
@@ -67,7 +67,21 @@ Ext.define("NewSencha.controller.MainController", {
 				}
 			}
 		});
-		
+		*/
+		$fh.act({
+			act:'webCall',
+			req: {
+				query: 'terms',
+				amount: 5,
+				timestamp: new Date().getTime()
+			}
+		}, function(res) {
+			var results = res.data.results;
+			console.log("Results are " + results);
+			}
+		}, function(code,errorprops,params) {
+			alert('Error retrieving web results: code: ' + code + " errorprops: " + errorprops + " params: " + params);
+		});
 		console.log("Fetch Case Command Received - End");
 	},
 	
