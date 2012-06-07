@@ -16,7 +16,7 @@ Ext.define("NewSencha.store.ListStore", {
         ],
         sorters: [{ property: 'dateCreated', direction: 'DESC'}],
 		grouper: function(record){
-			return record.get("title")[0];
+			return record.get("title");
 		}
     }
 });
