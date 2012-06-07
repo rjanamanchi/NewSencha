@@ -4,7 +4,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	initialize: function(){
 		var newButton = {
 			xtype: "button",
-			text: "Add Case",
+			text: "Add/Edit Case",
 			ui: "action",
 			handler: this.addButtonClicked,
 			scope:this
