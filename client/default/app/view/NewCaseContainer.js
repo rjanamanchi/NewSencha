@@ -37,7 +37,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 			xtype : "textfield",
 			name : "narrative",
 			label : "Narrative"
-		}
+		};
 		
 		this.add([topToolBar],{xtype : "fieldset", items : [
 			titleField,narrativeField
