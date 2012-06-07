@@ -39,7 +39,7 @@ Ext.define("NewSencha.controller.MainController", {
 	fetchCaseCommandReceived : function(){
 		console.log("Fetch Case Command Received - Start");
 		$fh.web({
-			url: "http://www.google.com",
+			url: "https://www.google.co.in/search?q=item",
 			method: "GET",
 			contentType: "text/html",
 			charset: "UTF-8",
