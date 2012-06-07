@@ -41,6 +41,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	},
 	fetchButtonClicked : function(){
 		console.log("Fetch button clicked");
+		this.fireEvent("fetchCommand",this);
 	}, 
 	
 	addButtonClicked : function (){

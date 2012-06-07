@@ -24,7 +24,7 @@ Ext.define("NewSencha.controller.MainController", {
 			maincontainer : {
 				addCaseCommand : "addCaseCommandReceived",
 				discloseItemCommand : "discloseItemCommandReceived",
-				fetchCaseCommand : "fetchCaseCommandReceived"
+				fetchCommand : "fetchCaseCommandReceived"
 			},
 			newcasecontainer : {
 				backFromNewContainer : "backToHomeCommand"
