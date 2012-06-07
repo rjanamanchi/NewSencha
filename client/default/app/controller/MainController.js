@@ -38,7 +38,7 @@ Ext.define("NewSencha.controller.MainController", {
 	
 	fetchCaseCommandReceived : function(){
 		console.log("Fetch Case Command Received - Start");
-		$fh.web({
+	/*	$fh.web({
 			url: "http://www.google.com",
 			method: "GET",
 			contentType: "text/html",
@@ -51,7 +51,7 @@ Ext.define("NewSencha.controller.MainController", {
 				var data = result.body;
 				console.log("Response is " + data);
 			}
-		});
+		});*/
 		console.log("Fetch Case Command Received - End");
 	},
 	
