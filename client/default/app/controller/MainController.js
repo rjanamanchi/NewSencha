@@ -22,9 +22,7 @@ Ext.define("NewSencha.controller.MainController", {
 		},
 		control : {
 			maincontainer : {
-				addCaseCommand : "addCaseCommandReceived"
-			},
-			listContainer : {
+				addCaseCommand : "addCaseCommandReceived",
 				discloseItemCommand : "discloseItemCommandReceived"
 			},
 			newcasecontainer : {
@@ -37,6 +35,10 @@ Ext.define("NewSencha.controller.MainController", {
 		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
 	},
 	
+	discloseItemCommandReceived : function(){
+		console.log('Disclose case received');
+		this.activateListEditor(record);
+	},
 	addCaseCommandReceived : function(){
 		console.log('Add case received');
 		var now = new Date();
@@ -48,10 +50,6 @@ Ext.define("NewSencha.controller.MainController", {
 			narrative : ""
 		});
 		this.activateListEditor(newList);
-	},
-	discloseItemCommandReceived : function (list, record){
-		console.log('Disclose case received');
-		this.activateListEditor(record);
 	},
 	getRandomInt : function(){
 		return Math.floor(Math.random() % 1000);
