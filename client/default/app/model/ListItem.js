@@ -10,7 +10,7 @@ Ext.define("NewSencha.model.ListItem", {
         ],
 		validations : [
 			{type : 'presence', field : 'id'},
-			{type : 'presence', field : 'dateCreated'},
+			{type : 'presence', field : 'dateCreated'}
 		]
     }
 });
