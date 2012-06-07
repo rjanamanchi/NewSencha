@@ -4,7 +4,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	initialize: function(){
 		var newButton = {
 			xtype: "button",
-			text: "Add/Edit Case",
+			text: "Add Case",
 			ui: "action",
 			handler: this.addButtonClicked,
 			scope:this
@@ -20,11 +20,23 @@ Ext.define("NewSencha.view.MainContainer", {
 				newButton
 			] 
 		};
-		this.add([toolBar]);
+		
+		var list = {
+			xtype : 'casesList',
+			listeners : {
+				disclose : { fn : this.onListItemDisclose, scope : this }
+			}
+		}
+		
+		this.add([toolBar, list]);
 	},
 	addButtonClicked : function (){
 		console.log("Add case command sent across");
 		this.fireEvent("addCaseCommand", this);
+	},
+	onListItemDisclose : function (list, record, target, index, evt, options){
+		console.log("Disclosure button clicked");
+		this.fireEvent('discloseItemCommand', this, record);
 	},
 	config:{
 		layout : {

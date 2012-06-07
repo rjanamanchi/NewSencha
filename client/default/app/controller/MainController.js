@@ -14,15 +14,22 @@ Ext.define("NewSencha.controller.MainController", {
 	config:{
 		refs : {
 		    maincontainer : "mainContainer"
+			listContainer : "casesList"
 		},
 		control : {
 			maincontainer : {
-					addCaseCommand : "addCaseCommandReceived"
+				addCaseCommand : "addCaseCommandReceived"
+			}
+			listContainer : {
+				discloseItemCommand : "discloseItemCommandReceived"
 			}
 		}
 	},
 	addCaseCommandReceived : function(){
 		console.log('Add case received');
+	},
+	discloseItemCommandReceived : function (){
+		console.log('Disclose case received');
 	}
 	
 });

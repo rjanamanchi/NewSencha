@@ -13,7 +13,7 @@ Ext.application({
 
 	controllers : ['MainController'],
 	
-    views: ['MainContainer'],
+    views: ['MainContainer','ListContainer'],
 
     icon: {
         57: 'resources/icons/Icon.png',
