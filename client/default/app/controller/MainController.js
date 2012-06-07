@@ -31,7 +31,7 @@ Ext.define("NewSencha.controller.MainController", {
 	},
 	addCaseCommandReceived : function(){
 		console.log('Add case received');
-		var now = newcaseeditor Date();
+		var now = new Date();
 		var listID = (now.getTime()).toString + this.getRandomInt().toString();
 		var newList = Ext.create("NewSencha.model.ListItem",{
 			id : listID,
