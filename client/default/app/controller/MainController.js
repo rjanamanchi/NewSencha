@@ -46,12 +46,15 @@ Ext.define("NewSencha.controller.MainController", {
 			period: 60000 //cache for 1 min
 			}, function(err, result) {
 			if (err) {
-			console.log("Error : " + err.message);
+				console.log("Error : " + err.message);
+				if(result)
+					console.log("Response is " + result.body);
 			} else {
 				var data = result.body;
 				console.log("Response is " + data);
 			}
 		});
+		
 		console.log("Fetch Case Command Received - End");
 	},
 	
