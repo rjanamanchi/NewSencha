@@ -35,7 +35,7 @@ Ext.define("NewSencha.controller.MainController", {
 	backToHomeCommand : function(){
 		var homeScreen = this.getMaincontainer();
 		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
-	}
+	},
 	
 	addCaseCommandReceived : function(){
 		console.log('Add case received');
