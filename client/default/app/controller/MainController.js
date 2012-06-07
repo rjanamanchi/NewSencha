@@ -49,8 +49,9 @@ Ext.define("NewSencha.controller.MainController", {
 		});
 		this.activateListEditor(newList);
 	},
-	discloseItemCommandReceived : function (){
+	discloseItemCommandReceived : function (list, record){
 		console.log('Disclose case received');
+		this.activateListEditor(record);
 	},
 	getRandomInt : function(){
 		return Math.floor(Math.random() % 1000);

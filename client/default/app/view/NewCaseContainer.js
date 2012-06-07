@@ -26,6 +26,19 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 			]
 		};
 		
+		var titleField = {
+			xtype : "textfield",
+			name : "title",
+			label : "Title",
+			required : true;
+		};
+		
+		var narrativeField = {
+			xtype : "textfield",
+			name : "narrative",
+			label : "Narrative"
+		}
+		
 		this.add([topToolBar]);
     },
 	backClicked : function(){
