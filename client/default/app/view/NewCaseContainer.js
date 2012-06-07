@@ -30,7 +30,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 			xtype : "textfield",
 			name : "title",
 			label : "Title",
-			required : true;
+			required : true
 		};
 		
 		var narrativeField = {
@@ -39,7 +39,9 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 			label : "Narrative"
 		}
 		
-		this.add([topToolBar]);
+		this.add([topToolBar],{xtype : "fieldset", items : [
+			titleField,narrativeField
+		]});
     },
 	backClicked : function(){
 		console.log("Back from New Container");
