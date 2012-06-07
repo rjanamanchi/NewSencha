@@ -23,6 +23,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		
 		var list = {
 			xtype : 'casesList',
+			store :Ext.getStore("ListStore"),
 			listeners : {
 				disclose : { fn : this.onListItemDisclose, scope : this }
 			}
