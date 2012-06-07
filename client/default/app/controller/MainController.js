@@ -35,7 +35,7 @@ Ext.define("NewSencha.controller.MainController", {
 		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
 	},
 	
-	discloseItemCommandReceived : function(){
+	discloseItemCommandReceived : function(list, record){
 		console.log('Disclose case received');
 		this.activateListEditor(record);
 	},
