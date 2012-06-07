@@ -6,7 +6,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
         scrollable:'vertical'
     },
     initialize: function () {
-        this.callParent(arguments);
+        this.callParent();
 		
 		var backButton = {
 			xtype : "button",
