@@ -8,7 +8,7 @@ Ext.define("NewSencha.view.MainContainer", {
 			ui: "action",
 			handler: this.addButtonClicked,
 			scope:this
-		};
+		};   
 		var toolBar = {
 			xtype : "toolbar",
 			docked : "top",
