@@ -38,7 +38,7 @@ Ext.define("NewSencha.controller.MainController", {
 	
 	fetchCaseCommandReceived : function(){
 		console.log("Fetch Case Command Received - Start");
-		$fh.web({
+		/*$fh.web({
 			url: "https://www.google.co.in/search?q=item",
 			method: "GET",
 			contentType: "text/html",
@@ -52,6 +52,19 @@ Ext.define("NewSencha.controller.MainController", {
 			} else {
 				var data = result.body;
 				console.log("Response is " + data);
+			}
+		});*/
+		$fh.feed({
+			'link': "http://www.feedhenry.com/feed",
+			'list-max': 10
+			}, function(err, result) {
+			if (err) {
+				console.log("Error is : " + err.message)
+			} else {
+			entries = result.list;
+			for (var i = 0; i < entries.length; i++) {
+				console.log("Entry title : " + entries[i].fields.title + " : Content : " + entries[i].fields.description);
+				}
 			}
 		});
 		
