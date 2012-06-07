@@ -11,7 +11,9 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 		var backButton = {
 			xtype : "button",
 			ui : "back",
-			text : "Home" 
+			text : "Home",
+			handler : this.backClicked,
+			scope : this 
 		};
 		
 		var topToolBar = {
@@ -25,5 +27,9 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 		};
 		
 		this.add([topToolBar]);
-    }
+    },
+	backClicked : function(){
+		console.log("Back from New Container");
+		this.fireEvent("backFromNewContainer",this);
+	}
 });

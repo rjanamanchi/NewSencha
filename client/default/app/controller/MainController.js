@@ -26,9 +26,17 @@ Ext.define("NewSencha.controller.MainController", {
 			},
 			listContainer : {
 				discloseItemCommand : "discloseItemCommandReceived"
+			},
+			newcasecontainer : {
+				backFromNewContainer : "backToHomeCommand"
 			}
 		}
 	},
+	backToHomeCommand : function(){
+		var homeScreen = this.getMaincontainer();
+		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
+	}
+	
 	addCaseCommandReceived : function(){
 		console.log('Add case received');
 		var now = new Date();
