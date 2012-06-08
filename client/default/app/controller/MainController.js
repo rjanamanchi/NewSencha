@@ -71,7 +71,7 @@ Ext.define("NewSencha.controller.MainController", {
 		$fh.act({
 			act:'webCloudCall'
 		}, function(res) {
-			console.log("Results are " + res);
+			console.log("Results are " + res.data);
 			},
 		 function(code,errorprops,params) {
 			alert('Error retrieving web results: code: ' + code + " errorprops: " + errorprops + " params: " + params);
