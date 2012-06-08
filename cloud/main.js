@@ -14,3 +14,8 @@ exports.getConfig = function(params, callback) {
   return callback(null, {config: cfg.config});
 };
 
+exports.webCloudCall = function (params, callback){
+	console.log("Cloud function called");
+	var dataObject = {data : "Data Received"};
+	return callback(null,dataObject);
+}

@@ -69,15 +69,9 @@ Ext.define("NewSencha.controller.MainController", {
 		});
 		*/
 		$fh.act({
-			act:'webCall',
-			req: {
-				query: 'terms',
-				amount: 5,
-				timestamp: new Date().getTime()
-			}
+			act:'webCloudCall'
 		}, function(res) {
-			var results = res.data.results;
-			console.log("Results are " + results);
+			console.log("Results are " + res);
 			},
 		 function(code,errorprops,params) {
 			alert('Error retrieving web results: code: ' + code + " errorprops: " + errorprops + " params: " + params);
