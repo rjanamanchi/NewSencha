@@ -9,8 +9,7 @@ Ext.define("NewSencha.view.BaseContainer", {
         cls: 'ribbon',
         height: 5,
         width: '100%',
-		docked:'top',
-		layout : 'fit'
+		docked:'top'
 		}
 		]
 	}
