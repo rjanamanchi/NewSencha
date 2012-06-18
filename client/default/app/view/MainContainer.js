@@ -1,7 +1,8 @@
 Ext.define("NewSencha.view.MainContainer", {
-    extend: 'Ext.Container',
+    extend: 'NewSencha.view.BaseContainer',
 	alias: 'widget.mainContainer',
 	initialize: function(){
+		this.callParent(arguments);
 		var newButtonLeft = {
 			xtype: "button",
 			text: "Fetch Cases",
