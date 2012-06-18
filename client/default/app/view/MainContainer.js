@@ -19,7 +19,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		};   
 		var toolBar = {
 			xtype : "toolbar",
-			docked : "top",
+			// docked : "top",
 			title : "Cases",
 			items : [
 			newButtonLeft,

@@ -7,7 +7,8 @@ Ext.define("NewSencha.view.BaseContainer", {
 		            layout: 'hbox',
 		            cls: 'ribbon',
 		            height: 5,
-		            width: '100%'
+		            width: '100%',
+					docked:'top'
 		};
 		
 		this.add([ribbon]);
@@ -23,10 +24,6 @@ Ext.define("NewSencha.view.BaseContainer", {
 			docked:"bottom",
 			handler: this.mainButtonClicked,
 			scope:this
-		},
-		mainButtonClicked : function(){
-			console.log("main button clicked");
-			 this.fireEvent("mainCommand",this)
 		}
 	}
 });
