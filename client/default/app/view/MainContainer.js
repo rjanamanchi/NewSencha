@@ -1,6 +1,12 @@
 Ext.define("NewSencha.view.MainContainer", {
     extend: 'NewSencha.view.BaseContainer',
 	xtype: 'mainContainer',
+	
+	requires :[
+		'NewSencha.store.ListStore',			
+		'Ext.dataview.List'
+	],
+	
 	config:{
 		// this.callParent(arguments);
 		items :[
