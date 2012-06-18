@@ -8,13 +8,12 @@ Ext.define("NewSencha.view.MainContainer", {
 	],
 	
 	config:{
-		// this.callParent(arguments);
+		this.callParent(arguments);
 		items :[
 		{
 			xtype : "toolbar",
 			docked : "top",
 			title : "New Case",
-			docked: 'top',
 			items : [
 			{
 				xtype:'button',
