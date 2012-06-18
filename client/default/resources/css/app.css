@@ -6,6 +6,10 @@ input, textarea, p, blockquote, th, td {
   padding: 0;
 }
 
+.ribbon{
+  background:url("../images/ribbon.png") repeat-x !important; 
+}
+
 /* line 8, ../themes/stylesheets/sencha-touch/default/core/_reset.scss */
 table {
   border-collapse: collapse;

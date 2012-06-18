@@ -1,5 +1,5 @@
 Ext.define("NewSencha.view.NewCaseContainer", {
-    extend: "Ext.form.Panel",
+    extend: "NewSencha.view.MainContainer",
     requires: "Ext.form.FieldSet",
     alias: "widget.newcaseeditor",
     config:{
@@ -8,7 +8,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
     initialize: function () {
         this.callParent(arguments);
 		
-		var backButton = {
+/*		var backButton = {
 			xtype : "button",
 			ui : "back",
 			text : "Home",
@@ -40,9 +40,11 @@ Ext.define("NewSencha.view.NewCaseContainer", {
 		};
 		
 		this.add([topToolBar,{xtype : "fieldset", items : [titleField,narrativeField]}]);
+		
     },
 	backClicked : function(){
 		console.log("Back from New Container");
 		this.fireEvent("backFromNewContainer",this);
 	}
+	*/
 });
