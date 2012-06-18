@@ -16,14 +16,6 @@ Ext.define("NewSencha.view.BaseContainer", {
 	config:{
 		layout : {
 			type : "fit"
-		},
-		var button : {
-			xtype: "button",
-			text: "Add Main View",
-			ui: "action",
-			docked:"bottom",
-			handler: this.mainButtonClicked,
-			scope:this
 		}
 	}
 });
