@@ -22,7 +22,7 @@ Ext.define("NewSencha.view.MainContainer", {
 				ui:'action',
 				width:'13%',
 				height:'10px'
-			}
+			},
 				{xtype : "spacer"}
 			]
 		},
