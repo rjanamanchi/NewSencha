@@ -10,7 +10,7 @@ Ext.define("NewSencha.view.BaseContainer", {
 		            width: '100%'
 		};
 		
-		this.add(ribbon);
+		this.add([ribbon]);
 	},
 	config:{
 		layout : {
