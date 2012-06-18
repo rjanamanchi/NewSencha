@@ -16,6 +16,7 @@ Ext.define("NewSencha.controller.MainController", {
 	
 	config:{
 		refs : {
+			basecontainer : "baseContainer",
 		    maincontainer : "mainContainer",
 			listContainer : "casesList",
 			newcasecontainer : "newcaseeditor"

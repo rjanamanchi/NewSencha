@@ -1,6 +1,6 @@
 Ext.define("NewSencha.view.BaseContainer", {
     extend: 'Ext.Container',
-	alias: 'widget.mainContainer',
+	alias: 'widget.baseContainer',
 	initialize: function(){
 		var ribbon = {
 		            xtype: 'panel',
