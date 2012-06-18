@@ -1,6 +1,6 @@
 Ext.define("NewSencha.view.BaseContainer", {
     extend: 'Ext.Container',
-	alias: 'widget.baseContainer',
+	xtype: 'baseContainer',
 	config:{
 		items : [
 		{

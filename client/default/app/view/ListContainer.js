@@ -1,6 +1,6 @@
 Ext.define("NewSencha.view.ListContainer", {
     extend: 'Ext.dataview.List',
-	alias : "widget.casesList",
+	xtype : 'casesList',
 	config:{
 		loadingText : "Loading Cases…",
 		emptyText : '</pre><div class = "cases-list-empty-text">No Notes Found</div><pre>',

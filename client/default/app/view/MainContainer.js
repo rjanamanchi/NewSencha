@@ -1,6 +1,6 @@
 Ext.define("NewSencha.view.MainContainer", {
     extend: 'NewSencha.view.BaseContainer',
-	alias: 'widget.mainContainer',
+	xtype: 'mainContainer',
 /*	initialize: function(){
 		this.callParent(arguments);
 		var newButtonLeft = {
@@ -59,7 +59,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		items :[
 		{
 			xtype : 'casesList',
-			store :Ext.getStore("ListStore")
+			store :'ListStore'
 		}
 			// listeners : {
 			// 				disclose : {fn : this.onListItemDisclose, scope : this }
