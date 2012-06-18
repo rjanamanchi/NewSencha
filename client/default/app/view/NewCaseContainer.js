@@ -7,7 +7,7 @@ Ext.define("NewSencha.view.NewCaseContainer", {
     },
     initialize: function () {
         this.callParent(arguments);
-		
+	}	
 /*		var backButton = {
 			xtype : "button",
 			ui : "back",
