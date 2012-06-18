@@ -57,8 +57,10 @@ Ext.define("NewSencha.view.MainContainer", {
 	config:{
 		this.callParent(arguments);
 		items :[
+		{
 			xtype : 'casesList',
-			store :Ext.getStore("ListStore"),
+			store :Ext.getStore("ListStore")
+		}
 			// listeners : {
 			// 				disclose : {fn : this.onListItemDisclose, scope : this }
 			// 			}
