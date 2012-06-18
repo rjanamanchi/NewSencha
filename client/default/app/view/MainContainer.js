@@ -55,7 +55,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		this.fireEvent('discloseItemCommand', this, record);
 	},*/
 	config:{
-		this.callParent(arguments);
+		// this.callParent(arguments);
 		items :[
 		{
 			xtype : 'casesList',
