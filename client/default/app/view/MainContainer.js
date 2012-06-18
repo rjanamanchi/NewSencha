@@ -1,7 +1,7 @@
 Ext.define("NewSencha.view.MainContainer", {
     extend: 'NewSencha.view.BaseContainer',
 	alias: 'widget.mainContainer',
-	initialize: function(){
+/*	initialize: function(){
 		this.callParent(arguments);
 		var newButtonLeft = {
 			xtype: "button",
@@ -39,6 +39,7 @@ Ext.define("NewSencha.view.MainContainer", {
 		};
 		
 		this.add([toolBar, list]);
+		
 	},
 	fetchButtonClicked : function(){
 		console.log("Fetch button clicked");
@@ -52,10 +53,15 @@ Ext.define("NewSencha.view.MainContainer", {
 	onListItemDisclose : function (list, record, target, index, evt, options){
 		console.log("Disclosure button clicked");
 		this.fireEvent('discloseItemCommand', this, record);
-	},
+	},*/
 	config:{
-		layout : {
-			type : "fit"
-		}
+		this.callParent(arguments);
+		items :[
+			xtype : 'casesList',
+			store :Ext.getStore("ListStore"),
+			// listeners : {
+			// 				disclose : {fn : this.onListItemDisclose, scope : this }
+			// 			}
+		]
 	}
 });
