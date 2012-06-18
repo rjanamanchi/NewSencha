@@ -29,12 +29,21 @@ Ext.define("NewSencha.controller.MainController", {
 			},
 			newcasecontainer : {
 				backFromNewContainer : "backToHomeCommand"
+			},
+			basecontainer : {
+				mainCommand : "mainCommandReceived"
 			}
 		}
 	},
 	backToHomeCommand : function(){
 		var homeScreen = this.getMaincontainer();
 		Ext.Viewport.animateActiveItem(homeScreen,this.slideRightTransition);
+	},
+	
+	mainCommandReceived : function(){
+		console.log("Main command received");
+		var mainScreen = this.getMaincontainer();
+		Ext.Viewport.animateActiveItem(mainScreen,this.slideRightTransition);
 	},
 	
 	fetchCaseCommandReceived : function(){
