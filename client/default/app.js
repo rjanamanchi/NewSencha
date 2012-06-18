@@ -13,7 +13,7 @@ Ext.application({
 
 	controllers : ['MainController'],
 	
-    views: ['MainContainer','ListContainer','NewCaseContainer'],
+    views: ['BaseContainer','MainContainer','ListContainer','NewCaseContainer'],
 
 	models : ['ListItem'],
 	
