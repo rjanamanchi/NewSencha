@@ -7,8 +7,8 @@ Ext.define("NewSencha.view.BaseContainer", {
 		            layout: 'hbox',
 		            cls: 'ribbon',
 		            height: 5,
-		            width: '100%',
-		}
+		            width: '100%'
+		};
 		
 		this.add(ribbon);
 	},
