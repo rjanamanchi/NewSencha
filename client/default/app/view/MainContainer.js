@@ -3,8 +3,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	alias: 'widget.mainContainer',
 	initialize: function(){
 		this.callParent(arguments);
-		var ribbon = this.ribbon;
-		this.remove(ribbon,false);
+		
 		var newButtonLeft = {
 			xtype: "button",
 			text: "Fetch Cases",
@@ -45,6 +44,8 @@ Ext.define("NewSencha.view.MainContainer", {
 	},
 	fetchButtonClicked : function(){
 		console.log("Fetch button clicked");
+		var ribbon = this.ribbon;
+		this.remove(this.ribbon);
 		this.fireEvent("fetchCommand",this);
 	}, 
 	
