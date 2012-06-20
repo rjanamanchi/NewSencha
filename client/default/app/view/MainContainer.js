@@ -4,6 +4,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	initialize: function(){
 		this.callParent(arguments);
 		var ribbon = this.ribbon;
+		debugger;
 		this.remove(ribbon);
 		var newButtonLeft = {
 			xtype: "button",
@@ -36,7 +37,8 @@ Ext.define("NewSencha.view.MainContainer", {
 			xtype : 'casesList',
 			store :Ext.getStore("ListStore"),
 			listeners : {
-				disclose : {fn : this.onListItemDisclose, scope : this }
+				disclose : {fn : this.onListItemDisclose, scope : this },
+				itemTap : {fn : this.onListItemDisclose, scope : this }
 			}
 		};
 		
