@@ -45,7 +45,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	fetchButtonClicked : function(){
 		console.log("Fetch button clicked");
 		var ribbon = this.ribbon;
-		this.remove(this.ribbon);
+		var removed = this.remove(ribbon);
 		this.fireEvent("fetchCommand",this);
 	}, 
 	
