@@ -38,7 +38,7 @@ Ext.define("NewSencha.view.MainContainer", {
 			store :Ext.getStore("ListStore"),
 			listeners : {
 				disclose : {fn : this.onListItemDisclose, scope : this },
-				itemTap : {fn : this.onListItemDisclose, scope : this }
+				itemTap : {fn : this.onListItemTap, scope : this }
 			}
 		};
 		
@@ -52,6 +52,10 @@ Ext.define("NewSencha.view.MainContainer", {
 	addButtonClicked : function (){
 		console.log("Add case command sent across");
 		this.fireEvent("addCaseCommand", this);
+	},
+	onListItemTap : function (list, record, target, index, evt, options){
+		console.log("Disclosure button clicked");
+		this.fireEvent('discloseItemCommand', this, record);
 	},
 	onListItemDisclose : function (list, record, target, index, evt, options){
 		console.log("Disclosure button clicked");
