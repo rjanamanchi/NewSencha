@@ -4,9 +4,7 @@ Ext.define("NewSencha.view.MainContainer", {
 	initialize: function(){
 		this.callParent(arguments);
 		var ribbon = this.ribbon;
-		this.remove(ribbon,true);
-		doLayout();
-		debugger;
+		this.remove(ribbon,false);
 		var newButtonLeft = {
 			xtype: "button",
 			text: "Fetch Cases",
